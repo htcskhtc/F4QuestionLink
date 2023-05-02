@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Student Question Links</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.11/jquery.csv.min.js"></script>
+</head>
+
+<body>
+    <h1>Student Question Links</h1>
+    <div>
+        <label for="student">Select Student</label>
+        <select id="student">
+            <option value="">-- Select --</option>
+            <option value="4A 01 CHAN CHUNG YI ZOE">4A 01 CHAN CHUNG YI ZOE</option> 
+            <option value="4A 02 CHAN KAI MAN CLORIS">4A 02 CHAN KAI MAN CLORIS</option> 
+            <option value="4A 03 CHAN TSZ CHING KAREN">4A 03 CHAN TSZ CHING KAREN</option> 
+            <option value="4A 04 CHAN WING LAM CANDY">4A 04 CHAN WING LAM CANDY</option> 
+            <option value="4A 05 CHENG SHEUNG CHUEN IVANA">4A 05 CHENG SHEUNG CHUEN IVANA</option> 
+            <option value="4A 06 CHIU CHUI YI KARY">4A 06 CHIU CHUI YI KARY</option> 
+            <option value="4A 07 CHO HOI YING YOYO">4A 07 CHO HOI YING YOYO</option> 
+            <option value="4A 08 CHU TSZ YEE CHLOE">4A 08 CHU TSZ YEE CHLOE</option> 
+            <option value="4A 09 FU TIN WING SKYE">4A 09 FU TIN WING SKYE</option> 
+            <option value="4A 10 LAI HOI CHING OLIVIA">4A 10 LAI HOI CHING OLIVIA</option> 
+            <option value="4A 11 LEE LING YIU ALICE">4A 11 LEE LING YIU ALICE</option> 
+            <option value="4A 12 LEE RACHELE">4A 12 LEE RACHELE</option> 
+            <option value="4A 13 LEUNG HIU CHING COEY">4A 13 LEUNG HIU CHING COEY</option> 
+            <option value="4A 14 LEUNG WING SUM EUNICE">4A 14 LEUNG WING SUM EUNICE</option> 
+            <option value="4A 15 LIN TSZ KI VICKY">4A 15 LIN TSZ KI VICKY</option> 
+            <option value="4A 16 LO PUI SZE KITTY">4A 16 LO PUI SZE KITTY</option> 
+            <option value="4A 17 NGAI PIK YI SOPHIE">4A 17 NGAI PIK YI SOPHIE</option> 
+            <option value="4A 18 TAN ZI TIAN CANDY">4A 18 TAN ZI TIAN CANDY</option> 
+            <option value="4A 19 TANG KIT YI KITTY">4A 19 TANG KIT YI KITTY</option> 
+            <option value="4A 20 TSOI PUI MAN ANGEL">4A 20 TSOI PUI MAN ANGEL</option> 
+            <option value="4A 21 WONG WING CHING KELLY">4A 21 WONG WING CHING KELLY</option> 
+            <option value="4A 22 WU CHING YU SELENA">4A 22 WU CHING YU SELENA</option> 
+            <option value="4A 23 WU TSZ LAM ASHELLY">4A 23 WU TSZ LAM ASHELLY</option> 
+            <option value="4A 24 XIE CHI NGA NICOLE">4A 24 XIE CHI NGA NICOLE</option> 
+            <option value="4A 25 YAM PUI SZE JOYCE">4A 25 YAM PUI SZE JOYCE</option> 
+            <option value="4A 26 YAN WING KI ANGEL">4A 26 YAN WING KI ANGEL</option> 
+            <option value="4A 27 YEUNG MAN HEI COIE">4A 27 YEUNG MAN HEI COIE</option> 
+            <option value="4A 28 ZHANG XIYAN HAYLEY">4A 28 ZHANG XIYAN HAYLEY</option>
+            <option value="4B 01 AWAN AYSHA NAWAZ">4B 01 AWAN AYSHA NAWAZ</option> 
+            <option value="4B 02 CHAN PUI CHI JESSICA">4B 02 CHAN PUI CHI JESSICA</option> 
+            <option value="4B 03 CHAU CHING YEE AMY">4B 03 CHAU CHING YEE AMY</option> 
+            <option value="4B 04 CHEN ANNIKA BRANDY HAO YAN">4B 04 CHEN ANNIKA BRANDY HAO YAN</option> 
+            <option value="4B 05 CHEN SHUYI ZOEY">4B 05 CHEN SHUYI ZOEY</option> 
+            <option value="4B 06 CHEUNG CHUN YEE CHLOE">4B 06 CHEUNG CHUN YEE CHLOE</option> 
+            <option value="4B 07 CHEUNG HAU WING WING">4B 07 CHEUNG HAU WING WING</option> 
+            <option value="4B 08 CHOI HOK MAN IRIS">4B 08 CHOI HOK MAN IRIS</option> 
+            <option value="4B 09 HO ZOE">4B 09 HO ZOE</option> 
+            <option value="4B 10 KO KA YI MACY">4B 10 KO KA YI MACY</option> 
+            <option value="4B 11 KONG TSZ KI KIKI">4B 11 KONG TSZ KI KIKI</option> 
+            <option value="4B 12 KUO SHING NGA TIFFANY">4B 12 KUO SHING NGA TIFFANY</option> 
+            <option value="4B 13 KWAN KAM YUI SUKI">4B 13 KWAN KAM YUI SUKI</option> 
+            <option value="4B 14 KWAN YU FAN FIONA">4B 14 KWAN YU FAN FIONA</option> 
+            <option value="4B 15 LAM MAN KA ANGELA">4B 15 LAM MAN KA ANGELA</option> 
+            <option value="4B 16 LAM SHU MAN SARAH">4B 16 LAM SHU MAN SARAH</option> 
+            <option value="4B 17 LAU PAN YIN PANNY">4B 17 LAU PAN YIN PANNY</option> 
+            <option value="4B 18 LAU SUM YEE CECI">4B 18 LAU SUM YEE CECI</option> 
+            <option value="4B 19 LEE LOK JADE">4B 19 LEE LOK JADE</option> 
+            <option value="4B 20 LEE LOK YAN CANDY">4B 20 LEE LOK YAN CANDY</option> 
+            <option value="4B 21 MAN CHEUK LAM ELEANOR">4B 21 MAN CHEUK LAM ELEANOR</option> 
+            <option value="4B 22 NG KA WING CARINE">4B 22 NG KA WING CARINE</option> 
+            <option value="4B 23 TANG SUM YUET ATHENA">4B 23 TANG SUM YUET ATHENA</option> 
+            <option value="4B 24 TO PUI NI BELLA">4B 24 TO PUI NI BELLA</option> 
+            <option value="4B 25 TO SUM YAU ZOIE">4B 25 TO SUM YAU ZOIE</option> 
+            <option value="4B 26 WONG SHUN CORRINE">4B 26 WONG SHUN CORRINE</option> 
+            <option value="4B 27 WONG YIN TING TINA">4B 27 WONG YIN TING TINA</option> 
+            <option value="4B 28 WONG YU SZE DOROTHY">4B 28 WONG YU SZE DOROTHY</option> 
+            <option value="4B 29 WU CHEUK YING MANDY">4B 29 WU CHEUK YING MANDY</option> 
+            <option value="4B 30 YANG HIU TING CHERRY">4B 30 YANG HIU TING CHERRY</option>
+            <option value="4C 01 BIBI SIDRA">4C 01 BIBI SIDRA</option> 
+            <option value="4C 02 CHAN HIU YI ZOE">4C 02 CHAN HIU YI ZOE</option> 
+            <option value="4C 03 CHAN LOK YAN CHERRY">4C 03 CHAN LOK YAN CHERRY</option> 
+            <option value="4C 04 CHAN YEUK YU JACEY">4C 04 CHAN YEUK YU JACEY</option> 
+            <option value="4C 05 CHEUNG TSZ LUI RELLA">4C 05 CHEUNG TSZ LUI RELLA</option> 
+            <option value="4C 06 CHEUNG WAI KA VERONICA">4C 06 CHEUNG WAI KA VERONICA</option> 
+            <option value="4C 07 CHOW YING LAM KATLYN">4C 07 CHOW YING LAM KATLYN</option> 
+            <option value="4C 08 CHUI SHUN HEI COCO">4C 08 CHUI SHUN HEI COCO</option> 
+            <option value="4C 09 HUNG SZE HANG TIFFANY">4C 09 HUNG SZE HANG TIFFANY</option> 
+            <option value="4C 10 KONG TSUN YING EDITH">4C 10 KONG TSUN YING EDITH</option> 
+            <option value="4C 11 KWAN SHEUNG MAN MANDY">4C 11 KWAN SHEUNG MAN MANDY</option> 
+            <option value="4C 12 LAM YING CHING SWINSTY">4C 12 LAM YING CHING SWINSTY</option> 
+            <option value="4C 13 LEE LAM YIN CHRISSIE">4C 13 LEE LAM YIN CHRISSIE</option> 
+            <option value="4C 14 LEUNG LING KALI">4C 14 LEUNG LING KALI</option> 
+            <option value="4C 15 LO HIU YU HELIA">4C 15 LO HIU YU HELIA</option> 
+            <option value="4C 16 LO TSZ TUNG MIMI">4C 16 LO TSZ TUNG MIMI</option> 
+            <option value="4C 17 MENG YING CHUK ANGEL">4C 17 MENG YING CHUK ANGEL</option> 
+            <option value="4C 18 NG MEI YING ANGEL">4C 18 NG MEI YING ANGEL</option> 
+            <option value="4C 19 NG SZE LOK NICKY">4C 19 NG SZE LOK NICKY</option> 
+            <option value="4C 20 TAM CHING KA TIFFANY">4C 20 TAM CHING KA TIFFANY</option> 
+            <option value="4C 21 TAM CHING YU CEILIA">4C 21 TAM CHING YU CEILIA</option> 
+            <option value="4C 22 TANG TSZ CHING NIKI">4C 22 TANG TSZ CHING NIKI</option> 
+            <option value="4C 23 TANG TSZ UE CRYSTAL">4C 23 TANG TSZ UE CRYSTAL</option> 
+            <option value="4C 24 TSE TIN YU KIMI">4C 24 TSE TIN YU KIMI</option> 
+            <option value="4C 25 WONG LOK YAN AMY">4C 25 WONG LOK YAN AMY</option> 
+            <option value="4C 26 WONG SUEN SUM ATHENA">4C 26 WONG SUEN SUM ATHENA</option> 
+            <option value="4C 27 YAU TSZ KI JENNY">4C 27 YAU TSZ KI JENNY</option> 
+            <option value="4C 28 YIM WING CHI MAGGIE">4C 28 YIM WING CHI MAGGIE</option> 
+            <option value="4C 29 ZHANG YINGYING WING">4C 29 ZHANG YINGYING WING</option>
+            <option value="4D 01 CHAN CHELSEA ROSE">4D 01 CHAN CHELSEA ROSE</option> 
+            <option value="4D 02 CHAN PUI CHUN CHARIS">4D 02 CHAN PUI CHUN CHARIS</option> 
+            <option value="4D 03 CHAU KA YI MANDY">4D 03 CHAU KA YI MANDY</option> 
+            <option value="4D 04 CHENG SUM YIN THEODORA">4D 04 CHENG SUM YIN THEODORA</option> 
+            <option value="4D 05 CHEUNG YUET YI EUGENIA">4D 05 CHEUNG YUET YI EUGENIA</option> 
+            <option value="4D 06 CHOI SHEE IN SWANIE">4D 06 CHOI SHEE IN SWANIE</option> 
+            <option value="4D 07 KAM CHING YAN JADE">4D 07 KAM CHING YAN JADE</option> 
+            <option value="4D 08 KONG TSZ WING ASHLEY">4D 08 KONG TSZ WING ASHLEY</option> 
+            <option value="4D 09 KWOK CHIN HI ABBY">4D 09 KWOK CHIN HI ABBY</option> 
+            <option value="4D 10 LAM SUM WING EMILY">4D 10 LAM SUM WING EMILY</option> 
+            <option value="4D 11 LAU HOI YAU HEIDI">4D 11 LAU HOI YAU HEIDI</option> 
+            <option value="4D 12 LAU WING TUNG CHERISH">4D 12 LAU WING TUNG CHERISH</option> 
+            <option value="4D 13 LAU WING YAN VANESSA">4D 13 LAU WING YAN VANESSA</option> 
+            <option value="4D 14 LEE SUM YUET JOANNA">4D 14 LEE SUM YUET JOANNA</option> 
+            <option value="4D 15 LUK SHING LAM SHERLYN">4D 15 LUK SHING LAM SHERLYN</option> 
+            <option value="4D 16 LUNG TSZ YAN YANNOX">4D 16 LUNG TSZ YAN YANNOX</option> 
+            <option value="4D 17 MA XUEFEI SOPHIE">4D 17 MA XUEFEI SOPHIE</option> 
+            <option value="4D 18 NG HO MAN TRINITY">4D 18 NG HO MAN TRINITY</option> 
+            <option value="4D 19 NG HOI KI KATY">4D 19 NG HOI KI KATY</option> 
+            <option value="4D 20 NG TSOI YI TRACY">4D 20 NG TSOI YI TRACY</option> 
+            <option value="4D 21 SAU NOK SZE JOSIE">4D 21 SAU NOK SZE JOSIE</option> 
+            <option value="4D 22 SIU YUET YAN MELITA">4D 22 SIU YUET YAN MELITA</option> 
+            <option value="4D 23 TAM CHUN WING WAYNE">4D 23 TAM CHUN WING WAYNE</option> 
+            <option value="4D 24 TAM TSZ YIN JASMINE">4D 24 TAM TSZ YIN JASMINE</option> 
+            <option value="4D 25 TAM WING YI WINNIE">4D 25 TAM WING YI WINNIE</option> 
+            <option value="4D 26 TANG YAN HEI YANNAS">4D 26 TANG YAN HEI YANNAS</option> 
+            <option value="4D 27 TIU WAI KEI ANGELA">4D 27 TIU WAI KEI ANGELA</option> 
+            <option value="4D 28 TONG HO CHI SHARON">4D 28 TONG HO CHI SHARON</option> 
+            <option value="4D 29 TSE HEI LAM LUCY">4D 29 TSE HEI LAM LUCY</option> 
+            <option value="4D 30 WONG CHI CHING ZOE">4D 30 WONG CHI CHING ZOE</option> 
+            <option value="4D 31 WONG HIN YAN VICKY">4D 31 WONG HIN YAN VICKY</option> 
+            <option value="4D 32 WONG SZE KIU SOPHIE">4D 32 WONG SZE KIU SOPHIE</option> 
+            <option value="4D 33 WU CHAU FUNG AUTUMN">4D 33 WU CHAU FUNG AUTUMN</option> 
+            <option value="4D 34 YU HIU CHING ISABEL">4D 34 YU HIU CHING ISABEL</option>
+            <option value="4E 01 CHAN CHING LAAM CHLOE">4E 01 CHAN CHING LAAM CHLOE</option> 
+            <option value="4E 03 CHAN LOK TUNG SELENE">4E 03 CHAN LOK TUNG SELENE</option> 
+            <option value="4E 04 CHAN PUI LAM PHOEBE">4E 04 CHAN PUI LAM PHOEBE</option> 
+            <option value="4E 05 CHAN SING YU MAY">4E 05 CHAN SING YU MAY</option> 
+            <option value="4E 06 CHAN SUET YING ICY">4E 06 CHAN SUET YING ICY</option> 
+            <option value="4E 07 CHEUNG WING YAN SELINA">4E 07 CHEUNG WING YAN SELINA</option> 
+            <option value="4E 08 CHIU TSZ YAU CHLOE">4E 08 CHIU TSZ YAU CHLOE</option> 
+            <option value="4E 09 CHU YEUK HEI SAVANNA">4E 09 CHU YEUK HEI SAVANNA</option> 
+            <option value="4E 10 FONG YAN RUBY">4E 10 FONG YAN RUBY</option> 
+            <option value="4E 11 HO WING YAN JENNY">4E 11 HO WING YAN JENNY</option> 
+            <option value="4E 12 KWAN HO YAN JANICE">4E 12 KWAN HO YAN JANICE</option> 
+            <option value="4E 13 LAM YAN TUNG NICOLE">4E 13 LAM YAN TUNG NICOLE</option> 
+            <option value="4E 14 LEE HIU CHING JANICE">4E 14 LEE HIU CHING JANICE</option> 
+            <option value="4E 15 LEUNG CHEUK TUNG CHARTON">4E 15 LEUNG CHEUK TUNG CHARTON</option> 
+            <option value="4E 16 LEUNG YIN KA CHRISTY">4E 16 LEUNG YIN KA CHRISTY</option> 
+            <option value="4E 17 LI MAN YAN KATRINA">4E 17 LI MAN YAN KATRINA</option> 
+            <option value="4E 18 LO TO YAN CONSTANCE">4E 18 LO TO YAN CONSTANCE</option> 
+            <option value="4E 19 MA HOK LAM ELLIE">4E 19 MA HOK LAM ELLIE</option> 
+            <option value="4E 20 NG WING CHI VINCY">4E 20 NG WING CHI VINCY</option> 
+            <option value="4E 21 TAI WING YIN CONNIE">4E 21 TAI WING YIN CONNIE</option> 
+            <option value="4E 22 TIN MAN YAN JOSIE">4E 22 TIN MAN YAN JOSIE</option> 
+            <option value="4E 23 WONG CHEUK LAAM JADE">4E 23 WONG CHEUK LAAM JADE</option> 
+            <option value="4E 24 WONG HO CHING ANNETTE">4E 24 WONG HO CHING ANNETTE</option> 
+            <option value="4E 25 WONG SUM KIU KIURIN">4E 25 WONG SUM KIU KIURIN</option> 
+            <option value="4E 26 WONG SUM YAU SHARON">4E 26 WONG SUM YAU SHARON</option> 
+            <option value="4E 27 WONG YI LAI MARINE">4E 27 WONG YI LAI MARINE</option> 
+            <option value="4E 28 WU CHAU YUET EVA">4E 28 WU CHAU YUET EVA</option> 
+            <option value="4E 29 WU CHUN LAM LEANN">4E 29 WU CHUN LAM LEANN</option> 
+            <option value="4E 30 YU MAN HEI JAYMEE">4E 30 YU MAN HEI JAYMEE</option> 
+            <option value="4E 31 YU YIWEN MANDY">4E 31 YU YIWEN MANDY</option> 
+            <option value="4E 32 YUEN WING YAN ANNA">4E 32 YUEN WING YAN ANNA</option>
+
+        </select>
+        <button id="get-link">Get Question Link</button>
+
+    </div>
+    <div id="link-container"></div>
+    <div id="link-container_s"></div>
+
+    <script>
+		$(document).ready(function() {
+			$("#get-link").click(function() {
+				var student = $("#student").val();
+				if (student != "") {
+					$.get("https://htcskhtc.github.io/F5QuestionLink/data.csv", function(data) {
+						var questionLinks = $.csv.toObjects(data);
+						var link = "";
+                        var slink = "";
+						$.each(questionLinks, function(index, questionLink) {
+							if (questionLink.StdName == student) {
+								link = questionLink.QuestionLink;
+                                slink = questionLink.SolLink;
+								return false;
+							}
+						});
+						if (link != "" && slink !="") {
+							$("#link-container").html("<a href='" + link + "?student=" + student + "' target='_blank'>Question Link for " + student + "</a>");
+                            $("#link-container_s").html("<a href='" + slink + "?student=" + student + "' target='_blank'>Solution Link</a>");
+						} else {
+							$("#link-container").html("Question link not found for selected student.");
+                            $("#link-container_s").html("Solution link not found for selected student.");
+						}
+					});
+				}
+			});
+		});
+	</script>
+
+</body>
+</html>
